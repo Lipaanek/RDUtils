@@ -85,6 +85,18 @@ Output -> Distance: 10 studs
 ```luau
 MathUtils.VectorNormalize(Vector3)
 ```
-A Unit Vector is a Vector who’s values are based on 1. This is basically only used for directional vectors as far as I know[^1].
+This function Normalizes Vector to `Vector Unit`.
+A `Unit Vector` is a Vector who’s values are based on 1. This is basically only used for directional vectors as far as I know[^1].
 
 [^1]: [Source: Excess Energy](https://devforum.roblox.com/t/vector3unit-can-someone-explain-this/735674/3?u=lipaanek)
+
+### D. Round
+```luau
+MathUtils.Round(<Number>; <Type>)
+```
+```
+Type -> "Ceil"; "Floor"; "Round"
+```
+`Ceil` Rounds the number up regardles it's lower (ceil(1.1) -> 2).
+`Floor` Rounds the number down regardles it's higher (floor(1.7) -> 1).
+`Round` Rounds the number like normal (round(1.5) -> 2; round(1.4) -> 1)
