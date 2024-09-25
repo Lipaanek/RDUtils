@@ -100,3 +100,22 @@ Type -> "Ceil"; "Floor"; "Round"
 `Ceil` Rounds the number up regardles it's lower (ceil(1.1) -> 2).
 `Floor` Rounds the number down regardles it's higher (floor(1.7) -> 1).
 `Round` Rounds the number like normal (round(1.5) -> 2; round(1.4) -> 1)
+
+### E. Sing
+```luau
+MathUtils.Sing(<Number>)
+```
+This functions return only 3 numbers: `1`; `-1`; `0`. When given numbers is greater than 0, then it will return 1, if the given number is smaller than `0`, then it will return `-1` and if number is exactly 0, then it will return `0`.
+
+### F. ToDeg
+```luau
+MathUtils.ToDeg(<NumOfRad>)
+```
+This function converts `Radians` to `Degrees`.
+<details>
+  <summary>More info</summary>
+  
+  ### How does it work?
+  It uses this simple formula:
+  > $X\frac{\pi}{180}$
+</details>
