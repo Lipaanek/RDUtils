@@ -116,6 +116,97 @@ This function converts `Radians` to `Degrees`.
   <summary>More info</summary>
   
   ### How does it work?
-  It uses this simple formula:
-  > $X\frac{\pi}{180}$
+  It uses this simple formula, where `X` is radian value:
+  # $X\cdot\frac{\pi}{180}$
+</details>
+
+### G. ToRad
+```luau
+MathUtils.ToRad(<NumOfRad>)
+```
+This function converts `Degrees` to `Radians`.
+<details>
+  <summary>More info</summary>
+  
+  ### How does it work?
+  It uses this simple formula, where `X` is degree value:
+  # $X\cdot\frac{180}{\pi}$
+</details>
+
+### H. Avarage
+```lua
+MathUtils.Avrg(...)
+```
+This function passes all number values given, it counts how many are there and how much their sum is, then it will divide sum by number of values given.
+
+<details>
+  <summary>More info</summary>
+
+  ### How does it work?
+  It uses this mathematical formula:
+  # $A=\frac{1}{n}\displaystyle\sum_{i=1}^{n}a_i$
+</details>
+
+
+
+### I. Vector Cross Product
+```lua
+MathUtils.VectorCrossProduct(<Vector1>; <Vector2>)
+```
+>[!NOTE]
+>Works only for Vector3!
+This function multiplies Vector3 by different Vector3. It sounds easy, you can just do this, right?
+```lua
+Vector3.new() * Vector3.new()
+```
+Wrong, it's much more complicated and thats why I included this as a function.
+
+
+
+<details>
+  <summary>More info</summary>
+
+  ### How does it work?
+  Vector is basically Matrix, so we can achieve the same effect with two Matrices:
+ ```math
+\begin{bmatrix}
+  v_{1}\\
+  v_{2}\\
+  v_{3}
+\end{bmatrix}
+\times
+\begin{bmatrix}
+  w_{1}\\
+  w_{2}\\
+  w_{3}
+\end{bmatrix} =
+\begin{bmatrix}
+  v_{2}w_{3} - v_{3}w_{2}\\
+  v_{3}w_{1} - v_{1}w_{3}\\
+  v_{1}w_{2} - v_{2}w_{1}
+\end{bmatrix}
+```
+</details>
+
+### J. Perlin Noise
+```lua
+MathUtils.PNoise(<xValue>; <yValue>; <zValue>)
+```
+This function converts x; y; z; values to `perlin noise`. There is no need to explain anything further because roblox has "build-in" function like this.
+
+### K. Vector Angle
+```lua
+MathUtils.PNoise(<Vector1>; <Vector2>)
+```
+This function calculates angle between two `Vector3s`.
+
+<details>
+  <summary>More info</summary>
+
+  ### How does it work?
+  Angle between two Vectors is calculated using `sin` or `cos`.
+  
+  ## $\sin\theta = \frac{v_{1} \times v_{2}}{|v_{1}| |v_{2}|}$ 
+  
+  ## $\cos\theta = \frac{|v_{1} \times v_{2}|}{|v_{1}| |v_{2}|}$
 </details>
