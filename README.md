@@ -196,17 +196,32 @@ This function converts x; y; z; values to `perlin noise`. There is no need to ex
 
 ### K. Vector Angle
 ```lua
-MathUtils.PNoise(<Vector1>; <Vector2>)
+MathUtils.VectorAngle(<Vector1>; <Vector2>)
 ```
-This function calculates angle between two `Vector3s`.
+This function calculates Vector angle.
 
 <details>
   <summary>More info</summary>
 
   ### How does it work?
-  Angle between two Vectors is calculated using `sin` or `cos`.
+  Angle is calculated using `sin` or `cos`.
   
   ## $\sin\theta = \frac{v_{1} \times v_{2}}{|v_{1}| |v_{2}|}$ 
   
   ## $\cos\theta = \frac{|v_{1} \times v_{2}|}{|v_{1}| |v_{2}|}$
+</details>
+
+### L. Vector Angle Between
+```lua
+MathUtils.VectorAngleBetween(<Vector1>; <Vector2>)
+```
+This function calculates angle between two `Vector3`s. It might seems like it's the same exact thing as `Vector Angle`, and the answer is yes (kinda), function returns value in cos values.
+
+<details>
+  <summary>More info</summary>
+
+  ### How does it work?
+  Angle between two Vectors is calculated using `cos`.
+  
+  ## $\cos\theta = \frac{v_{1}:Dot(v_{2})}{\sqrt(x_{1} + y_{1}) \times \sqrt(x_{2} + y_{2}) }$
 </details>
