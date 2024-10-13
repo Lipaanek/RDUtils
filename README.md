@@ -7,6 +7,8 @@ RDUtils is split into five basic categories: MathUtils, AdvancedMathUtils, Strin
 >[!NOTE]
 >RDUtils is developed by: `Lipaanek`
 
+Special thanks to: irfwish (Totally)
+
 >[!CAUTION]
 >Do NOT change any code in official version of RDUtils, instead commit a change for RDUtils!
 
