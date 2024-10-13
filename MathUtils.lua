@@ -25,13 +25,8 @@ MathUtils.VectorAngleBetween = function(vector1 : Vector3, vector2 : Vector3)
 end
 
 MathUtils.Round = function(num, Type : "Ceil" | "Floor" | "Round")
-	if Type == "Ceil" then
-		return math.ceil(num)
-	elseif Type == "Floor" then
-		return math.floor(num)
-	elseif Type == "Round" then
-		return math.round(num)
-	end
+	local loweredType = string.lower(Type)
+	math[loweredType](num)
 end
 
 MathUtils.Avrg = function(...)
