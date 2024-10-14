@@ -15,7 +15,7 @@ Special thanks to: irfwish (Totally)
 ## 1. MathUtils
 MathUtils is library that takes most used functions and turns them into one **signle** function
 >[!IMPORTANT]
->Many functions are missing or are under construction (for example logic gates).
+>Many functions are missing or are under construction.
 
 ### A. Clamp
 ```luau
@@ -227,3 +227,22 @@ This function calculates angle between two `Vector3`s. It might seems like it's 
   
   ## $\cos\theta = \frac{v_{1}:Dot(v_{2})}{\sqrt(x_{1} + y_{1}) \times \sqrt(x_{2} + y_{2}) }$
 </details>
+
+## 2. LogicLib
+Ever imagined a lib where you can just call logic gates, if yes you are on the right place!
+
+### A. AND Gate
+```lua
+LogicLib.AND_Gate(<boolean>; <boolean>)
+```
+$A\cdot B or A \land B$
+
+\begin{table}[]
+\begin{tabular}{lllll}
+ A  B  Output  \\
+ 1  0  0    \\
+ 0  1  0    \\
+ 0  0  0 \\
+ 1  1  1
+\end{tabular}
+\end{table}
